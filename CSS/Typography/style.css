@@ -1,0 +1,57 @@
+#size {
+    font-size: 3rem;
+}
+
+#family {
+    font-family: arial;
+}
+
+/* font stack ('Courier New', Courier, monospace;) */
+#fs {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* generic family (sans-serif,serif,cursive,fantasy,monospace) */
+#gf{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.gg{
+    font-family: "Bitcount Prop Single Ink", system-ui;
+}
+a{
+    color:red;
+    font-size:40px;
+}
+ul li{
+    background-color:bisque;
+}
+/* Text properties  */
+#fontweight{
+    font-weight:bold;
+}
+#fontstyle{
+    font-style:italic;
+}
+#textalign{
+    text-align:center;
+}
+#textindent{
+    text-indent:150px;
+}
+#letterspace{
+    letter-spacing:10px;
+}
+#lineheight{
+    line-height:70px;
+}
+#wordspace{
+    word-spacing:30px;
+}
+#texttransform{
+    text-transform:uppercase;
+}
+#textdecoration{
+    text-decoration:line-through;
+}
+
+
+

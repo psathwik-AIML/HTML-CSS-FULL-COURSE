@@ -1,0 +1,27 @@
+#color{
+    color:red;
+}
+#background{
+    background-color:gold;
+}
+ol{
+    font-size:20px;
+}
+a{
+    font-size:40px;
+}
+#colorName{
+    color:brown;
+}
+#rgb{
+    color:rgb(80,0,9);
+    background-color:rgb(10,100,190);
+}
+#rgba{
+    color:rgba(30,50,180,0.8);
+    background-color:rgba(100,150,130,0.7);
+}
+#hex{
+    color:#ee940f;
+    background-color:#45039f;
+}

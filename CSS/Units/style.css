@@ -1,0 +1,60 @@
+/* pixel  */
+#pixels{
+    width:300px;
+    font-size:30px;
+    background-color:rgb(71, 124, 120);
+}
+#percentage{
+    width:500px;
+    background-color:rgb(158, 158, 66);
+    font-size:20px;
+}
+/* percentage  */
+.parent{
+    background-color:rgb(114, 50, 50);
+    width:300px;
+    height:300px;
+}
+.child{
+    background-color:rgb(60, 60, 118);
+    width:50%;
+    height:90%;
+}
+/* em values  */
+#em{
+    background-color:rgb(76, 32, 73);
+    font-size:3em;
+}
+/* rem values  */
+#rem{
+    background-color:rgb(90, 166, 195);
+    font-size:3rem;
+}
+/* vw and vh  */
+#vw-vh{
+    background-color:rgb(214, 124, 139);
+    width:50vw;
+}
+/* default  */
+.dev{
+    background:burlywood;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* calc file code  */
+#cal{
+    font-size:3rem;
+    color:rgb(41, 230, 88);
+    background-color:rgb(79, 60, 60);
+}
+.navbar{
+    background-color:rgb(48, 48, 95);
+    height:100px;
+}
+.banner{
+    background-color:rgb(142, 86, 66);
+    height:calc(100vh - 100px);
+}

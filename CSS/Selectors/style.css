@@ -1,0 +1,17 @@
+/* element selector  */
+h2{
+    color:red;
+}
+/* group selector  */
+h3,p{
+    color:goldenrod;
+}
+body{
+    color:blueviolet;
+}
+#idselector{
+    color:green
+}
+.class{
+    color:maroon
+}
