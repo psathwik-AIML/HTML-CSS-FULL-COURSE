@@ -1,0 +1,210 @@
+.bi {
+    height: 400px;
+    border: 1px solid red;
+    background: url("person.jpg");
+}
+
+.repeat {
+    border: 2px solid red;
+    height: 400px;
+    background: url("./desk.jpg");
+    /* default  */
+    background-repeat: repeat;
+}
+
+.norepeat {
+    border: 2px solid red;
+    height: 400px;
+    background: url("./desk.jpg");
+    /* default  */
+    background-repeat: no-repeat;
+}
+
+.repeatx {
+    border: 2px solid red;
+    height: 400px;
+    background: url("./desk.jpg");
+    /* default  */
+    background-repeat: repeat-x;
+}
+
+.repeaty {
+    border: 2px solid red;
+    height: 400px;
+    background: url("./desk.jpg");
+    /* default  */
+    background-repeat: repeat-y;
+}
+
+.space {
+    border: 2px solid red;
+    height: 400px;
+    background: url("./desk.jpg");
+    /* default  */
+    background-repeat: space;
+}
+
+.round {
+    border: 2px solid red;
+    height: 400px;
+    background: url("./desk.jpg");
+    /* default  */
+    background-repeat: round;
+}
+
+.cover {
+    background: url("person.jpg");
+    height: 400px;
+    background-size: cover;
+}
+
+.contain {
+    background: url("person.jpg");
+    height: 400px;
+    background-size: contain;
+}
+
+/* positions  */
+.center {
+    background: url("desk.jpg");
+    border: 2px solid red;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left {
+    background: url("desk.jpg");
+    border: 2px solid red;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.right {
+    background: url("desk.jpg");
+    border: 2px solid red;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.top {
+    background: url("desk.jpg");
+    border: 2px solid red;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bottom {
+    background: url("desk.jpg");
+    border: 2px solid red;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.percentage {
+    background: url("desk.jpg");
+    border: 2px solid red;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+}
+
+.fixed {
+    background: url("cat.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.scroll {
+    background: url("person.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+#b {
+    color: red;
+    font-size: 3rem;
+}
+
+#g {
+    color: rgb(57, 218, 32);
+    font-size: 3rem;
+}
+
+/* gradients page code  */
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solqid red;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.b1 {
+    /* by default bottom  */
+    background: linear-gradient(red, blue);
+}
+
+.b2 {
+    /* bottom to top */
+    background: linear-gradient(to top, red, blue);
+}
+
+.b3 {
+    /* right to left */
+    background: linear-gradient(to left, red, blue);
+}
+
+.b4 {
+    /* left to right */
+    background: linear-gradient(to right, red, blue);
+}
+
+.b5 {
+    /* angle  */
+    background: linear-gradient(30deg, red, blue);
+}
+
+/* overlay file code  */
+#o {
+    color: rgb(199, 32, 218);
+    font-size: 3rem;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.banner,.header{
+    /* border:2px solid red; */
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:50px;
+    color:rgb(222, 105, 56);
+}
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url("car.jpg");
+    background-size:cover;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.header{
+    background:url("car.jpg");
+    background-size:cover;
+    background-position:center;
+}
