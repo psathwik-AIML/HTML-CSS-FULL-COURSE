@@ -1,0 +1,79 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+p{
+    font-size:3rem;
+}
+.main {
+    border: 3px solid red;
+    height: 500px;
+    width: 500px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.8rem;
+}
+
+/* static  */
+.div1 {
+    background-color: orangered;
+}
+
+.div2 {
+    background-color: rgb(59, 102, 210);
+}
+
+/* relative  */
+.r1 {
+    background-color: rgb(83, 183, 83);
+    position: relative;
+    top: 80px;
+    left: 100px;
+}
+
+.r2 {
+    background-color: rgb(189, 115, 178);
+    position: relative;
+    top: 40%;
+    left: 5rem;
+}
+
+/* absolute */
+/* parent */
+.main {
+    position: relative;
+}
+
+.a1 {
+    background-color: rgb(214, 94, 94);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.a2 {
+    background-color: rgb(170, 168, 69);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* fixed */
+.button {
+    background-color: rgb(250, 28, 28);
+    position: fixed;
+    top: 80px;
+    right: 80px;
+}

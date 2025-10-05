@@ -1,0 +1,22 @@
+
+.container{
+    border:5px solid rgb(255, 0, 238);
+    width:80%;
+    font-size:2rem;
+    overflow:hidden;
+}
+.one{
+    background-color:rgb(234, 97, 97);
+    padding:10px;
+    float:left;
+}
+.two{
+     background-color:rgb(116, 110, 198);
+     padding:10px;
+     float:right;
+}
+.three{
+     background-color:rgb(174, 212, 127);
+     padding:10px;
+     float:right;
+}
