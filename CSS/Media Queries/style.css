@@ -1,0 +1,16 @@
+ p{
+    color:rgb(196, 101, 101);
+    text-transform: capitalize;
+    font-size:20px;
+ }
+ body{
+    background-color:rgb(48, 48, 83);
+ }
+ @media screen and (min-width:600px) {
+    body{
+        background-color:rgb(35, 64, 35);
+    }
+    p{
+        color:rgb(212, 47, 212)
+    }
+ }
