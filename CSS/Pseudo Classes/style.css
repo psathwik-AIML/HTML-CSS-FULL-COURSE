@@ -1,0 +1,111 @@
+body{
+    background-color:bisque;
+}
+.heading {
+    text-align: center;
+}
+hr {
+    height: 3px;
+    background-color: blueviolet;
+    border: 0;
+    width: 80vw;
+}
+
+.box {
+    /* border:2px solid; */
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 9px;
+    border: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* hover  */
+#btn:hover {
+    background-color: brown;
+}
+
+/* active  */
+#ac:active {
+    color: rgb(51, 255, 0);
+    background-color: rgb(162, 90, 90);
+}
+
+/* focus  */
+#fo:focus {
+    color: teal;
+    background-color: gold;
+}
+
+/* first child  */
+#first:first-child {
+    color: red;
+    font-size: 30px;
+}
+
+/* last child  */
+#last:last-child {
+    color: rgb(196, 184, 53);
+    font-size: 30px;
+}
+
+/* nth child  */
+ol li:nth-child(even) {
+    color: rgb(106, 29, 57);
+    font-size: 3rem;
+}
+
+ol li:nth-child(odd) {
+    font-size: 3rem;
+    color: rgb(33, 158, 125);
+}
+/* table  */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* links page code  */
+/* default */
+.d:link{
+    color:rgb(233, 43, 43);
+    font-weight: 800;
+}
+/* visited */
+.v:visited{
+    color:rgb(0, 0, 0);
+    font-weight: 800;
+}
+/* hover */
+.h:hover{
+    color:rgb(250, 48, 227);
+    font-weight: 800;
+}
+/* active */
+.a:active{
+    color:rgb(255, 141, 34);
+    font-weight: 800;
+}

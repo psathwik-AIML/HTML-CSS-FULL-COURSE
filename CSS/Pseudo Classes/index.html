@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Pseudo-classes</h1>
+    <hr>
+    <br>
+    <!-- hover  -->
+    <h2>hover</h2>
+    <p>The :hover pseudo-class is used to style an element when you move your mouse over it.</p>
+    <h2>Ex:</h2>
+    <div class="box">
+        <button id="btn">Click Me</button>
+        <p>mouse over me</p>
+    </div>
+    <!-- active  -->
+    <h2>active</h2>
+    <p>The :active pseudo-class is used to style an element while it is being clicked (or activated).</p>
+    <h2>Ex:</h2>
+    <div class="box">
+        <button id="ac">Click Me</button>
+        <p>click and hold me</p>
+    </div>
+    <!-- focus  -->
+    <h2>focus</h2>
+    <p>The :focus pseudo-class is used to style an element when it receives focus, usually by clicking on it or tabbing
+        to it.</p>
+    <h2>Ex:</h2>
+    <div class="box">
+        <button id="fo">Click Me</button>
+        <p>tap on me</p>
+    </div>
+    <!-- first child  -->
+    <h2>first child</h2>
+    <p>The :first-child pseudo-class is used to style an element that is the first child of its parent.</p>
+    <h2>Ex:</h2>
+    <ul>
+        <li id="first">apple</li>
+        <li>banana</li>
+        <li>mango</li>
+        <li>grapes</li>
+    </ul>
+    <!-- last child  -->
+    <h2>last child</h2>
+    <p>The :last-child pseudo-class is used to style the element that is the last child of its parent.</p>
+    <h2>Ex:</h2>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>mango</li>
+        <li id="last">grapes</li>
+    </ul>
+    <!-- nth child  -->
+    <h2>nth child</h2>
+    <p>The :nth-child(n) pseudo-class is used to style elements based on their position in the parent.</p>
+    <h2>Ex:</h2>
+    <ol>
+        <li>apple</li>
+        <li>banana</li>
+        <li>mango</li>
+        <li>grapes</li>
+    </ol>
+    <!-- links page  -->
+     <h1>Links Page</h1>
+     <a href="links.html">Open Links Page</a>
+
+    <hr><br>
+    <h2>Summary Table</h2>
+    <table>
+        <tr>
+            <th>Pseudo-class</th>
+            <th>When it activates / Use case</th>
+            <th>Example / Effect</th>
+        </tr>
+        <tr>
+            <td>:hover</td>
+            <td>When you hover mouse over an element</td>
+            <td>Button changes color on hover</td>
+        </tr>
+        <tr>
+            <td>:active</td>
+            <td>While clicking / activating an element</td>
+            <td>Button darkens while clicked</td>
+        </tr>
+        <tr>
+            <td>:focus</td>
+            <td>When an element receives focus (input box)</td>
+            <td>Input border turns green when selected</td>
+        </tr>
+        <tr>
+            <td>:first-child</td>
+            <td>First child of its parent</td>
+            <td>First &lt;li&gt; in a list bold/red</td>
+        </tr>
+        <tr>
+            <td>:last-child</td>
+            <td>Last child of its parent</td>
+            <td>Last &lt;li&gt; green/bold</td>
+        </tr>
+        <tr>
+            <td>:nth-child(n)</td>
+            <td>Nth child of parent or pattern (odd/even)</td>
+            <td>Zebra stripes in a list, 3rd item red</td>
+        </tr>
+        <tr>
+            <td>:link</td>
+            <td>Unvisited link</td>
+            <td>Blue link</td>
+        </tr>
+        <tr>
+            <td>:visited</td>
+            <td>Visited link</td>
+            <td>Purple link</td>
+        </tr>
+    </table>
+</body>
+
+</html>

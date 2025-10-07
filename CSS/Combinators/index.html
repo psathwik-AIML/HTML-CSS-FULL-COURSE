@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="h1">Combinators</h1>
+    <hr>
+    <br>
+    <!-- descendent  -->
+    <h2>Descendent Combinator (space)</h2>
+    <p>The descendant combinator selects all elements inside another element, at any depth — no matter how deeply
+        nested.</p>
+    <h2>Ex:</h2>
+    <div class="container">
+        <p>Paragraph 1</p> <!--Direct child-->
+        <div>
+            <p>Paragraph 2</p> <!--nested child-->
+        </div>
+    </div>
+    <!-- Child  -->
+    <h2>Child Combinator (>)</h2>
+    <p>The child combinator selects only the direct children of an element — not deeper nested elements.</p>
+    <h2>Ex:</h2>
+    <div class="box">
+        <p>Paragraph 1</p> <!--Direct child-->
+        <div>
+            <p>Paragraph 2</p> <!--nested child-->
+        </div>
+    </div>
+    <!-- adjacent  sibling -->
+    <h2>Adjacent Sibling Combinator (+)</h2>
+    <p>The adjacent sibling combinator selects an element that is immediately after another element, on the same level
+        (same parent).</p>
+    <h2>Ex:</h2>
+    <h1 id="h">Heading</h1>
+    <p id="p">Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <!-- general sibling  -->
+    <h2>General Sibling Combinator (~)</h2>
+    <p>The general sibling combinator selects all elements after a specific element on the same parent level, not just
+        the immediate one.</p>
+    <h2>Ex:</h2>
+    <h1 class="h1">Heading</h1>
+    <p class="par">Paragraph 1</p>
+    <p class="par">Paragraph 2</p>
+    <p class="par">Paragraph 3</p>
+
+
+
+
+</body>
+
+</html>

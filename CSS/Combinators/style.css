@@ -1,0 +1,28 @@
+.h1{
+    text-align:center;
+}
+hr{
+    height:3px;
+    background-color:darkmagenta;
+    border:0;
+    width:80vw;
+}
+.container,.box{
+    border:1px solid ;
+}
+/* descendent  */
+.container p{
+    color:blue;
+}
+/* child  */
+.box>p{
+    color:red;
+}
+/* adjacent sibling */
+#h+#p{
+    color:darkorange;
+}
+/* general sibling */
+.h1~.par{
+    color:brown;
+}
