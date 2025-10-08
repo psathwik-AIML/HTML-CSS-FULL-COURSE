@@ -1,0 +1,87 @@
+/* ==========================
+   CSS Variables
+   ========================== */
+:root {
+    --heading-color: #2c3e50;      /* color for headings */
+    --paragraph-color: #34495e;    /* color for paragraphs */
+    --button-bg: #3498db;          /* background color for buttons */
+    --button-text: #fff;           /* text color for buttons */
+    --spacing: 15px;               /* general spacing/margin */
+    --font-stack: Arial, sans-serif; /* global font */
+    --border-radius: 8px;          /* border radius for buttons/cards */
+}
+
+/* ==========================
+   Global Styles
+   ========================== */
+body {
+    font-family: var(--font-stack);
+    margin: var(--spacing);
+    background-color: #fff;
+    color: var(--paragraph-color);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: var(--spacing);
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--button-bg);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+h1 {
+    margin-bottom: var(--spacing);
+}
+
+h2 {
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: var(--spacing);
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+    margin-bottom: var(--spacing);
+}
+
+button i {
+    margin-right: 5px; /* spacing between icon and text */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Sidebar */
+aside {
+    background-color: #f1f1f1;
+    padding: var(--spacing);
+    margin-top: var(--spacing);
+    border-radius: var(--border-radius);
+}

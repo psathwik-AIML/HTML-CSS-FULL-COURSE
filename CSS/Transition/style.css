@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.main {
+    width: 60vw;
+    border: 1px solid;
+    height: 40vh;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    background-color: rgb(51, 146, 153);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(12, 11, 11);
+    font-weight: 800;
+    transition: all 4s;
+}
+
+.ball:hover {
+    background-color: red;
+    border-radius: 50%;
+    color: white
+}
+h2{
+    text-transform:capitalize;
+    margin:10px;
+}
+
+/* common */
+.box {
+    background:linear-gradient(178deg,orange,red);
+    font-size: 3rem;
+    color: rgb(12, 11, 11);
+    font-weight: 800;
+}
+img{
+    margin:50px;
+}
+/* ease  */
+.ease{
+    width:200px;
+    transition:all 10s ease;
+}
+.ease:hover{
+    transform:scaleX(2);
+}
+/* ease in  */
+.ease-in{
+    width:200px;
+    transition:all 10s ease-in;
+}
+.ease-in:hover{
+    transform:scaleX(2);
+}
+/* ease-out  */
+.ease-out{
+    width:200px;
+    transition:all 10s ease-out;
+}
+.ease-out:hover{
+    transform:scaleX(2);
+}
+/* linear  */
+.linear{
+    width:200px;
+    transition:all 10s linear;
+}
+.linear:hover{
+    transform:scaleX(2);
+}
+/* ease in out  */
+.ease-in-out{
+    width:200px;
+    transition:all 10s ease;
+}
+.ease-in-out:hover{
+    transform:scaleX(2);
+}
+/* steps */
+.steps{
+    width:200px;
+    transition:all 2s steps(5);
+}
+.steps:hover{
+    transform:scaleX(1.3);
+}

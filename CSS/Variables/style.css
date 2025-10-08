@@ -1,0 +1,12 @@
+h1{
+    text-align:center;
+}
+:root{
+    --primaryColor:rgb(90, 90, 206);
+}
+p{
+    background-color:var(--primaryColor);
+}
+h1{
+    color:var(--primaryColor);
+}

@@ -1,0 +1,18 @@
+.box{
+    border:2px solid ;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+h3{
+    font-size:4rem;
+    text-shadow:10px 6px 5px rgb(50, 231, 222);
+}
+.bs{
+    background-color:orangered;
+    width:25%;
+    height:50%;
+    box-shadow:6px 12px 5px rgb(0, 255, 55);
+
+}
