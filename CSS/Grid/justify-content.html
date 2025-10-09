@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Justify Content</title>
+<style>
+  .container {
+    display: grid;
+    height:100vh;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    border: 2px solid #333;
+    width: 80%;  /* parent container smaller than body */
+    justify-content: end;  /* change this to start, end, space-between */
+    margin: 20px auto;
+  }
+
+  .item {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>Grid - justify-content</h1>
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+
+</body>
+</html>

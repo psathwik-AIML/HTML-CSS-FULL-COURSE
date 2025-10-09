@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; }
+    .grid-container {
+        display: grid; /* enable grid */
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        grid-gap: 10px; /* gap between items */
+        border: 2px solid #333;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: #43a08a;
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+        font-size: 20px;
+    }

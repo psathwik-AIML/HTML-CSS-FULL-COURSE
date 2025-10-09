@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid - Naming Lines</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; color: #333; }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: [start] 100px [middle] 200px [end];
+        grid-template-rows: [top] 100px [center] 150px [bottom];
+        grid-gap: 10px;
+        border: 2px solid #333;
+        padding: 10px;
+    }
+
+    .grid-item {
+        background-color: #ff6347;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        padding: 30px 0;
+    }
+
+    /* Place items using named grid lines */
+    .item1 { grid-column: start / middle; grid-row: top / center; }
+    .item2 { grid-column: middle / end; grid-row: center / bottom; }
+</style>
+</head>
+<body>
+
+<h1>CSS Grid - Naming Lines</h1>
+<p>Items are placed using <strong>named grid lines</strong> instead of numbers.</p>
+
+<div class="grid-container">
+    <div class="grid-item item1">Item 1</div>
+    <div class="grid-item item2">Item 2</div>
+</div>
+
+</body>
+</html>

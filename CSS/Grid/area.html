@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas</title>
+    <style>
+        .container{
+            border:2px solid;
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows:100px 100px 100px 100px 100px;
+            grid-template-areas:
+            "a a b"
+            "a a b"
+            "c c b"
+            "d d b"
+            "e e b"
+            ;
+        }
+        .b1{
+            grid-area:c;
+        }
+        .b2{
+            grid-area:d;
+        }
+        .b3{
+            grid-area:b;
+        }
+        .b5{
+            grid-area:e;
+        }
+        .b4{
+            grid-area:a;
+        }
+        .box{
+            background:rgb(89, 74, 45);
+            padding:10px;
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid areas</h1>
+    <div class="container">
+        <div class="box b1" style="background-color:rgb(211, 72, 72);">1</div>
+        <div class="box b2" style="background-color:rgb(44, 82, 80);">2</div>
+        <div class="box b3" style="background-color:rgb(213, 192, 52);">3</div>
+        <div class="box b4" style="background-color:rgb(69, 194, 98);">4</div>
+        <div class="box b5" style="background-color:rgb(194, 87, 167);">5</div>
+        
+    </div>
+
+</body>
+
+</html>

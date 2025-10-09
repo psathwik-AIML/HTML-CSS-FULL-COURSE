@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        /* flex container */
+        .container {
+            width: 70vw;
+            border: 4px solid rgb(19, 18, 18);
+            display: flex;
+            margin-bottom: 40px;
+            padding: 10px;
+            height: 200px; /* height needed to show vertical alignment */
+        }
+
+        /* flex items */
+        .box {
+            width: 80px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* box colors */
+        .box1 { background-color: rgb(171, 91, 54); height: 50px; }
+        .box2 { background-color: rgb(67, 160, 138); height: 80px; }
+        .box3 { background-color: rgb(160, 67, 126); height: 100px; }
+        .box4 { background-color: rgb(67, 67, 160); height: 70px; }
+    </style>
+</head>
+
+<body>
+    <h1>Align Items</h1>
+
+    <!-- 1️⃣ align-items: flex-start -->
+    <h2>1. flex-start</h2>
+    <p>Items are aligned at the start of the container (top side).</p>
+    <div class="container" style="align-items: flex-start;">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+    <!-- 2️⃣ align-items: flex-end -->
+    <h2>2. flex-end</h2>
+    <p>Items are aligned at the end of the container (bottom side).</p>
+    <div class="container" style="align-items: flex-end;">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+    <!-- 3️⃣ align-items: center -->
+    <h2>3. center</h2>
+    <p>Items are centered vertically in the container.</p>
+    <div class="container" style="align-items: center;">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+    <!-- 4️⃣ align-items: stretch -->
+    <h2>4. stretch (default)</h2>
+    <p>Items stretch to fill the container height (default behavior if no height set on items).</p>
+    <div class="container" style="align-items: stretch;">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+    <!-- 5️⃣ align-items: baseline -->
+    <h2>5. baseline</h2>
+    <p>Items align along their text baseline.</p>
+    <div class="container" style="align-items: baseline;">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+</body>
+</html>

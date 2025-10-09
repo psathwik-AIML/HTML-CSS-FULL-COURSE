@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid Units</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { text-align: center; color: #333; }
+    p { font-size: 16px; line-height: 1.5; }
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        margin-bottom: 40px;
+        padding: 10px;
+        border: 2px solid #333;
+    }
+    .grid-item {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        padding: 40px 0;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS Grid Units</h1>
+<p>This page demonstrates different units used in CSS Grid.</p>
+
+<!-- Pixels -->
+<h2>Pixels (px)</h2>
+<p>Fixed width columns in pixels.</p>
+<div class="grid-container" style="grid-template-columns: 100px 200px 150px;">
+    <div class="grid-item" style="background:red;">100px</div>
+    <div class="grid-item" style="background:blue;">200px</div>
+    <div class="grid-item" style="background:green;">150px</div>
+</div>
+
+<!-- Fraction (fr) -->
+<h2>Fraction (fr)</h2>
+<p>Flexible columns using fractions of available space.</p>
+<div class="grid-container" style="grid-template-columns: 1fr 2fr 1fr;">
+    <div class="grid-item" style="background:orange;">1fr</div>
+    <div class="grid-item" style="background:purple;">2fr</div>
+    <div class="grid-item" style="background:cyan;">1fr</div>
+</div>
+
+<!-- Percentage (%) -->
+<h2>Percentage (%)</h2>
+<p>Column widths relative to container.</p>
+<div class="grid-container" style="grid-template-columns: 30% 50% 20%;">
+    <div class="grid-item" style="background:tomato;">30%</div>
+    <div class="grid-item" style="background:teal;">50%</div>
+    <div class="grid-item" style="background:gold;">20%</div>
+</div>
+
+<!-- Auto -->
+<h2>Auto</h2>
+<p>Column width automatically adjusts to content.</p>
+<div class="grid-container" style="grid-template-columns: auto auto auto;">
+    <div class="grid-item" style="background:#ff7f50;">Short</div>
+    <div class="grid-item" style="background:#6a5acd;">Longer content</div>
+    <div class="grid-item" style="background:#20b2aa;">Medium</div>
+</div>
+
+<!-- Minmax -->
+<h2>Minmax(min, max)</h2>
+<p>Columns with minimum and maximum width.</p>
+<div class="grid-container" style="grid-template-columns: minmax(100px, 1fr) minmax(150px, 2fr) 100px;">
+    <div class="grid-item" style="background:#dc143c;">100px–1fr</div>
+    <div class="grid-item" style="background:#2e8b57;">150px–2fr</div>
+    <div class="grid-item" style="background:#ff8c00;">100px fixed</div>
+</div>
+
+<!-- Repeat -->
+<h2>Repeat()</h2>
+<p>Repeat columns easily.</p>
+<div class="grid-container" style="grid-template-columns: repeat(4, 1fr);">
+    <div class="grid-item" style="background:#8b0000;">1fr</div>
+    <div class="grid-item" style="background:#483d8b;">1fr</div>
+    <div class="grid-item" style="background:#2f4f4f;">1fr</div>
+    <div class="grid-item" style="background:#ff4500;">1fr</div>
+</div>
+<hr>
+<!-- fr code  -->
+ <a href="fr.html">Fr code</a>
+</body>
+</html>

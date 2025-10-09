@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid - fr Unit</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; color: #333; }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* fr example */
+        grid-gap: 10px;
+        border: 2px solid #333;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: #43a08a;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        padding: 40px 0;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS Grid - fr Unit</h1>
+<p>The <strong>fr</strong> unit divides available space into fractions.</p>
+
+<div class="grid-container">
+    <div class="grid-item">1fr</div>
+    <div class="grid-item">2fr</div>
+    <div class="grid-item">1fr</div>
+</div>
+
+</body>
+</html>

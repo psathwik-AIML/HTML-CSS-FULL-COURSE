@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Rows and Columns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .parent {
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: 100px 200px 400px;
+        }
+
+        .container{
+            border: 2px solid;
+            display: grid;
+            grid-template-columns:100px 300px;
+            grid-template-rows:100px 300px 100px;
+        }
+
+        .parent div,.container div {
+            padding: 10px;
+        }
+
+        .r1 {
+            background-color: rgb(230, 91, 91);
+        }
+
+        .r2 {
+            background-color: rgb(71, 81, 133);
+        }
+
+        .r3 {
+            background-color: rgb(156, 62, 159);
+        }
+
+        .r4 {
+            background-color: rgb(77, 181, 89);
+        }
+
+        .r5 {
+            background-color: rgb(225, 209, 65);
+        }
+
+        .r6 {
+            background-color: rgb(206, 43, 116);
+        }
+
+        .c1 {
+            background-color: rgb(230, 91, 91);
+        }
+
+        .c2 {
+            background-color: rgb(71, 81, 133);
+        }
+
+        .c3 {
+            background-color: rgb(156, 62, 159);
+        }
+
+        .c4 {
+            background-color: rgb(77, 181, 89);
+        }
+
+        .c5 {
+            background-color: rgb(225, 209, 65);
+        }
+
+        .c6 {
+            background-color: rgb(206, 43, 116);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid Rows and Columns</h1>
+    <!-- columns  -->
+     <h2>Columns</h2>
+    <div class="parent">
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+        <div class="c3">3</div>
+        <div class="c4">4</div>
+        <div class="c5">5</div>
+        <div class="c6">6</div>
+    </div> <br><br><br>
+    <!-- rows  -->
+     <h2>Rows</h2>
+    <div class="container">
+        <div class="r1">1</div>
+        <div class="r2">2</div>
+        <div class="r3">3</div>
+        <div class="r4">4</div>
+        <div class="r5">5</div>
+        <div class="r6">6</div>
+    </div>
+
+</body>
+
+</html>

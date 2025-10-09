@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid align-items</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 150px 150px;
+    gap: 10px;
+    border: 2px solid #333;
+    align-items:start;  /* try start, end, stretch */
+  }
+
+  .item {
+    background-color: #9b49a0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Grid - align-items</h1>
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+</div>
+
+</body>
+</html>
