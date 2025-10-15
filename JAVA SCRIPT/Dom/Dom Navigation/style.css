@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.parent {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.child {
+  background-color: rgb(39, 63, 71);
+  border: 1px solid #333;
+  margin: 5px;
+  padding: 5px;
+}
