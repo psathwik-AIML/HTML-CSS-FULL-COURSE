@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+#heading {
+  color: rgb(60, 60, 150);
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}

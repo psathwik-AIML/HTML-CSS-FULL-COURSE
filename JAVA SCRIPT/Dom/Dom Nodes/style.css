@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+  margin: 30px;
+}
+
+ul {
+  padding: 10px;
+  border: 2px solid #333;
+  width: 200px;
+}
+
+li {
+  background: rgb(32, 182, 232);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+}

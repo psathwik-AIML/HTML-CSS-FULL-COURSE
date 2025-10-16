@@ -1,0 +1,21 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.red {
+  background-color: tomato;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.blue {
+  background-color: lightblue;
+}

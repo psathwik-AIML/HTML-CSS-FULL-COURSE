@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Async/Await Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Async/Await</h1>
+
+        <section>
+            <h2>Definition</h2>
+            <p>
+                <strong>Async/Await</strong> is a modern syntax in JavaScript to handle asynchronous operations. 
+                <strong>async</strong> makes a function return a <em>Promise</em>, and <strong>await</strong> pauses execution until the Promise resolves.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Points</h2>
+            <ul>
+                <li>Async functions always return a <strong>Promise</strong>.</li>
+                <li>Await can only be used inside async functions.</li>
+                <li>Makes asynchronous code look like synchronous code.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Example 1: Basic Async/Await</h2>
+            <pre><code>
+async function fetchData() {
+    return "Data fetched successfully!";
+}
+
+fetchData().then(console.log);
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Example 2: Async/Await with Promises</h2>
+            <pre><code>
+function getData() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Task completed after 2 seconds"), 2000);
+    });
+}
+
+async function asyncTask() {
+    const result = await getData();
+    console.log(result);
+}
+
+asyncTask();
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Try it Yourself</h2>
+            <button id="runBtn">Run Async/Await Example</button>
+            <div id="output"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Promises Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Promises</h1>
+
+        <section>
+            <h2>Definition</h2>
+            <p>
+                A <strong>Promise</strong> is an object representing the eventual completion or failure of an asynchronous operation.
+            </p>
+        </section>
+
+        <section>
+            <h2>States of a Promise</h2>
+            <ul>
+                <li><strong>Pending:</strong> Initial state, neither fulfilled nor rejected.</li>
+                <li><strong>Fulfilled:</strong> Operation completed successfully.</li>
+                <li><strong>Rejected:</strong> Operation failed.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Example 1: Basic Promise</h2>
+            <pre><code>
+const myPromise = new Promise((resolve, reject) => {
+    let success = true;
+    if(success) {
+        resolve("Promise resolved!");
+    } else {
+        reject("Promise rejected!");
+    }
+});
+
+myPromise
+    .then(message => console.log(message))
+    .catch(error => console.log(error));
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Example 2: Using setTimeout</h2>
+            <pre><code>
+function asyncTask() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Task completed after 2 seconds");
+        }, 2000);
+    });
+}
+
+asyncTask().then(console.log);
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Try it Yourself</h2>
+            <button id="runBtn">Run Promise Example</button>
+            <div id="output"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
